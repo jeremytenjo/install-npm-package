@@ -1,0 +1,29 @@
+{
+	"env": {
+		"browser": false,
+		"commonjs": true,
+		"es6": true,
+		"node": true,
+		"mocha": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"ignorePatterns": [
+		"lib",
+		"app"
+	],
+	"rules": {
+		"no-const-assign": "warn",
+		"no-this-before-super": "warn",
+		"no-undef": "error",
+		"no-unreachable": "warn",
+		"no-unused-vars": "error",
+		"constructor-super": "warn",
+		"valid-typeof": "warn"
+	}
+}
