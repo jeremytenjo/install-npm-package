@@ -1,4 +1,4 @@
-# Install NPM packages
+# Install NPM package
 
 Quickly Install and uninstall NPM packages
 
