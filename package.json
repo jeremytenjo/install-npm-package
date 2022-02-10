@@ -1,53 +1,59 @@
 {
-	"name": "install-npm-package",
-	"displayName": "Install NPM package",
-	"description": "Install NPM packages quickly",
-	"publisher": "tenjojeremy",
-	"version": "0.5.0",
-	"engines": {
-		"vscode": "^1.55.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:installNPMPackage.installNPMPackage",
-		"onCommand:installNPMPackage.uninstallNPMPackage"
-	],
-	"main": "./src/index.js",
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "",
-		"publish": "vsce publish minor",
-		"vscode:prepublish": "npm run test"
-	},
-	"icon": "assets/images/logo.png",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jeremytenjo/install-npm-package"
-	},
-	"contributes": {
-		"commands": [
-			{
-				"command": "installNPMPackage.installNPMPackage",
-				"title": "Install NPM packages"
-			},
-			{
-				"command": "installNPMPackage.uninstallNPMPackage",
-				"title": "Uninstall NPM packages"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.55.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.4",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.19.0",
-		"glob": "^7.1.6",
-		"mocha": "^8.2.1",
-		"typescript": "^4.1.3",
-		"vscode-test": "^1.5.0"
-	}
+  "name": "install-npm-package",
+  "displayName": "Install NPM package",
+  "description": "Install NPM packages quickly",
+  "publisher": "tenjojeremy",
+  "version": "0.6.0",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "npm",
+    "install",
+    "package",
+    "javascript"
+  ],
+  "activationEvents": [
+    "onCommand:installNPMPackage.installNPMPackage",
+    "onCommand:installNPMPackage.uninstallNPMPackage"
+  ],
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "",
+    "publish": "vsce publish minor",
+    "vscode:prepublish": "npm run test"
+  },
+  "icon": "assets/images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremytenjo/install-npm-package"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "installNPMPackage.installNPMPackage",
+        "title": "Install NPM packages"
+      },
+      {
+        "command": "installNPMPackage.uninstallNPMPackage",
+        "title": "Uninstall NPM packages"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.55.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
 }
