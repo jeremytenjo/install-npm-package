@@ -1,6 +1,7 @@
 const vscode = require('vscode');
-const handleInstallNpmPackage = require('../utils/handleNpmPackage');
 const pkgJson = require('../package.json');
+const handleInstallNpmPackage = require('../utils/handleNpmPackage');
+const runGitPush = require('../utils/runGitPush');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -23,7 +24,7 @@ function activate(context) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand('installNPMPackage.runGitPush', () =>
-      handleInstallNpmPackage({ action: 'uninstall' })
+      runGitPush()
     )
   );
 }
