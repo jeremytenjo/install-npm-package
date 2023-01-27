@@ -3,7 +3,7 @@
   "displayName": "Install NPM package",
   "description": "Install NPM packages quickly",
   "publisher": "tenjojeremy",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -18,7 +18,8 @@
   ],
   "activationEvents": [
     "onCommand:installNPMPackage.installNPMPackage",
-    "onCommand:installNPMPackage.uninstallNPMPackage"
+    "onCommand:installNPMPackage.uninstallNPMPackage",
+    "onCommand:installNPMPackage.runGitPush"
   ],
   "main": "./src/index.js",
   "scripts": {
@@ -42,6 +43,10 @@
       {
         "command": "installNPMPackage.uninstallNPMPackage",
         "title": "Uninstall NPM packages"
+      },
+      {
+        "command": "installNPMPackage.runGitPush",
+        "title": "Run git push"
       }
     ]
   },
