@@ -16,6 +16,7 @@
     "package",
     "javascript"
   ],
+  "activationEvents": [],
   "main": "./src/index.js",
   "scripts": {
     "lint": "eslint .",
