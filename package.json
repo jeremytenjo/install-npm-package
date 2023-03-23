@@ -3,7 +3,7 @@
   "displayName": "Install NPM package",
   "description": "Install NPM packages quickly",
   "publisher": "tenjojeremy",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "engines": {
     "vscode": "^1.55.0"
   },
