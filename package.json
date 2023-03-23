@@ -16,11 +16,6 @@
     "package",
     "javascript"
   ],
-  "activationEvents": [
-    "onCommand:installNPMPackage.installNPMPackage",
-    "onCommand:installNPMPackage.uninstallNPMPackage",
-    "onCommand:installNPMPackage.runGitPush"
-  ],
   "main": "./src/index.js",
   "scripts": {
     "lint": "eslint .",
