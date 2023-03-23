@@ -2,6 +2,7 @@ const vscode = require('vscode');
 const pkgJson = require('../package.json');
 const handleInstallNpmPackage = require('../utils/handleNpmPackage');
 const runGitPush = require('../utils/runGitPush');
+const runGitPushNoVerify = require('../utils/runGitPushNoVerify');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -25,6 +26,13 @@ function activate(context) {
   context.subscriptions.push(
     vscode.commands.registerCommand('installNPMPackage.runGitPush', () =>
       runGitPush()
+    )
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      'installNPMPackage.runGitPushNoVerify',
+      () => runGitPushNoVerify()
     )
   );
 }
