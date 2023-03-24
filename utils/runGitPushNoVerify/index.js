@@ -6,5 +6,5 @@ module.exports = async function runGitPushNoVerify() {
   });
 
   terminal.show();
-  terminal.sendText(`git push --no-verify`);
+  terminal.sendText(`git push --no-verify && exit`);
 };

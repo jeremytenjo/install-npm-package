@@ -6,5 +6,5 @@ module.exports = async function runGitPush() {
   });
 
   terminal.show();
-  terminal.sendText(`git push`);
+  terminal.sendText(`git push && exit`);
 };
